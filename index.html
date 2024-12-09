@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,7 @@
 
 <body>
 
-    <div class="container-mensagens" id="container-mensagens">
-
-    </div>
+    <div class="container-mensagens" id="container-mensagens"></div>
 
     <a class="botao-carrinho hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
         <div class="container-total-carrinho badge-total-carrinho ">
@@ -91,7 +89,7 @@
                                 <a class="btn btn-yellow mt-4 mr-3">
                                     Ver cardápio
                                 </a>
-                                <a href="#" class="btn btn-white btn-icon-left mt-4 mr-3">
+                                <a href="#" class="btn btn-white btn-icon-left mt-4 mr-3" id="btnCelular">
                                     <span class="icon-left">
                                         <i class="fa fa-phone"></i>
                                     </span>
@@ -99,13 +97,13 @@
                                 </a>
                             </div>
                         </div>
-                        <a href="" class="btn btn-sm btn-white btn-social btn-instagram mt-4 mr-3">
+                        <a href="#" target="_blank" class="btn btn-sm btn-white btn-social btn-instagram mt-4 mr-3 instagramLink">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="" class="btn btn-sm btn-white btn-social btn-facebook mt-4 mr-3">
+                        <a href="#" target="_blank" class="btn btn-sm btn-white btn-social btn-facebook mt-4 mr-3 facebookLink">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="" class="btn btn-sm btn-white btn-social btn-whatsapp mt-4">
+                        <a href="#" target="_blank" class="btn btn-sm btn-white btn-social btn-whatsapp mt-4 whatsappLink">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -314,9 +312,9 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="" class="btn btn-sm btn-white btn-social mr-3 active">1</a>
-                        <a href="" class="btn btn-sm btn-white btn-social mr-3">2</a>
-                        <a href="" class="btn btn-sm btn-white btn-social">3</a>
+                        <a id="btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active" onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
+                        <a id="btnDepoimento-2" class="btn btn-sm btn-white btn-social mr-3" onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
+                        <a id="btnDepoimento-3" class="btn btn-sm btn-white btn-social" onclick="cardapio.metodos.abrirDepoimento(3)">3</a>
 
                     </div>
                 </div>
@@ -340,7 +338,7 @@
                                         <br>
                                         Reserve sua data e horário de forma simples e rápida.
                                     </p>
-                                    <a href="" class="btn btn-yellow mt-4">
+                                    <a class="btn btn-yellow mt-4" href="#" id="btnReserva" target="_blank">
                                         Fazer reserva
                                     </a>
                                 </div>
@@ -371,13 +369,13 @@
                     </p>
                 </div>
                 <div class="col-3 container-redes-footer">
-                    <a href="" class="btn btn-sm btn-white btn-social btn-instagram mr-3">
+                    <a href="#" target="_blank" class="btn btn-sm btn-white btn-social btn-instagram mr-3 instagramLink">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-white btn-social btn-facebook mr-3">
+                    <a href="#" target="_blank" class="btn btn-sm btn-white btn-social btn-facebook mr-3 facebookLink">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-white btn-social btn-whatsapp">
+                    <a href="#" target="_blank" class="btn btn-sm btn-white btn-social btn-whatsapp whatsappLink">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>

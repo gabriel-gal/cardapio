@@ -5,19 +5,20 @@ $(document).ready(function () {
 var cardapio = {};
 
 var MEU_CARRINHO = [];
-
 var MEU_ENDERECO = null;
-
 var VALOR_CARRINHO = 0;
-
 var VALOR_ENTREGA = 5;
-
-var CELULAR_EMPRESA = '5513974235880';
+var CELULAR_EMPRESA = '5513974205318';
+var INSTAGRAM = "gabri_ell21";
+var FACEBOOK = "gabriel";
 
 cardapio.eventos = {
 
     init: () => {
         cardapio.metodos.obterItensCardapio();
+        cardapio.metodos.carregarBotaoReserva();
+        cardapio.metodos.carregarBotaoCelular();
+        cardapio.metodos.carregarRedesSociais();
     }
 
 }
@@ -476,7 +477,6 @@ cardapio.metodos = {
 
                     text = text.replace(/\${itens}/g, itens);
 
-                    console.log(text)
                     let encode = encodeURI(text);
                     let URL = `https://wa.me/${CELULAR_EMPRESA}/?text=${encode}`
                 
@@ -484,6 +484,38 @@ cardapio.metodos = {
                 }
             })
         }
+    },
+
+    carregarBotaoReserva: () => {
+        var texto = "Tete";
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${CELULAR_EMPRESA}/?text=${encode}`;
+
+        $("#btnReserva").attr('href', URL);
+    },
+
+    carregarRedesSociais: () => {
+        $(".instagramLink").attr('href', `https://www.instagram.com/${INSTAGRAM}/`);
+        $(".facebookLink").attr('href', `https://www.facebook.com/${FACEBOOK}`);
+        $(".whatsappLink").attr('href', `https://api.whatsapp.com/send/?phone=${CELULAR_EMPRESA}`);
+    },
+
+    carregarBotaoCelular: () => {
+        $("#btnCelular").attr('href', `tel:${CELULAR_EMPRESA}`);
+    },
+
+    abrirDepoimento: (depoimento) => {
+        $("#depoimento-1").addClass("hidden")
+        $("#depoimento-2").addClass("hidden")
+        $("#depoimento-3").addClass("hidden")
+
+        $("#btnDepoimento-1").removeClass("active")
+        $("#btnDepoimento-2").removeClass("active")
+        $("#btnDepoimento-3").removeClass("active")
+
+        $(`#depoimento-${depoimento}`).removeClass("hidden")
+        $(`#btnDepoimento-${depoimento}`).addClass("active")
     },
 
     //Mensagem para adicionar ao Carrinho
