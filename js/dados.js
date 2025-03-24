@@ -5,49 +5,49 @@ var MENU = {
             "img": "./img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
             "name": "Joe's KC BBQ",
             "dsc": "Joe's KC Ribs, Brisket & Burnt Ends",
-            "price": 110.99
+            "price": 40
         },
         {
             "id": "005-kings-carolina-oink-sampler",
             "img": "./img/cardapio/churrasco/carolina-bbq-oink-sampler.1340b5a10cedc238cb2280306dd1d5a5.jpg",
             "name": "Kings BBQ",
             "dsc": "Carolina BBQ Oink Sampler",
-            "price": 89
+            "price": 30
         },
         {
             "id": "texas-monthlys-1-bbq-brisket",
             "img": "./img/cardapio/churrasco/texas-monthlys-1-bbq-brisket.1006a061be7acae03992e420fbca995a.jpg",
             "name": "Snow's BBQ",
             "dsc": "Texas Monthly's #1 BBQ Brisket",
-            "price": 199
+            "price": 45
         },
         {
             "id": "whole-brisket-texas-bbq-sauce",
             "img": "./img/cardapio/churrasco/whole-brisket-texas-barbecue-bbq-sauce.e07ee4818b20ed43d217bf67fedd41ce.jpg",
             "name": "Franklin Barbecue",
             "dsc": "Whole Brisket + Texas Barbecue BBQ Sauce",
-            "price": 249
+            "price": 34
         },
         {
             "id": "whole-texas-smoked-brisket",
             "img": "./img/cardapio/churrasco/whole-texas-smoked-brisket.a5558a25381e271408e197936e7985d8.jpg",
             "name": "Terry Black's Barbecue",
             "dsc": "Whole Texas Smoked Brisket",
-            "price": 189
+            "price": 32
         },
         {
             "id": "mini-trinity-bbq-combo-brisket-ribs-and-links",
             "img": "./img/cardapio/churrasco/mini-trinity-bbq-combo-brisket-ribs-and-links.245582f593bf64b23b57dfca2be18cfd.jpg",
             "name": "Bludso's BBQ",
             "dsc": "Mini Trinity BBQ Combo - Brisket, Ribs & Links",
-            "price": 139
+            "price": 36
         },
         {
             "id": "235203-blue-smoke-baby-back-ribs-backyard-barbecue-chicken-combo",
             "img": "./img/cardapio/churrasco/blue-smoke-baby-back-ribs-backyard-barbecue-chicken-combo.a95a3e632ae324f719738a2a5c1dff6e.jpg",
             "name": "Blue Smoke",
             "dsc": "Blue Smoke Baby Back Ribs + Backyard Barbecue Chicken Combo",
-            "price": 129
+            "price": 43
         },
         {
             "id": "006-kings-meat-lovers-special",

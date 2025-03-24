@@ -9,8 +9,8 @@ var MEU_ENDERECO = null;
 var VALOR_CARRINHO = 0;
 var VALOR_ENTREGA = 5;
 var CELULAR_EMPRESA = '5513974205318';
-var INSTAGRAM = "gabri_ell21";
-var FACEBOOK = "gabriel";
+var INSTAGRAM = "oburguer";
+var FACEBOOK = "oburguer";
 
 cardapio.eventos = {
 
